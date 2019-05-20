@@ -1,0 +1,95 @@
+//out: ../css/list.min.css, compress: true, sourceMap: false
+.list-content{
+  padding-top: 44px;
+  background-color:#fff;
+  transition: all .3s ease;
+  overflow-x:hidden;
+  .list-content__ul{
+    background-color: #fff;
+    .list-content__ul--li{
+      padding: 10px 15px;
+      border-bottom: 1px solid #d5dbdb;
+      &:hover{
+        cursor: pointer;
+      }
+      .list-content__ul--li--title{
+        color: #2c3e50;
+        font-size: 16px;
+        line-height: 1.5;
+        &:before {
+            content: attr(title);
+            margin-right: 10px;
+            margin-top: -3px;
+            padding: 5px 6px;
+            font-size: 10px;
+            font-weight: 400;
+            border-radius: 4px;
+            background-color: #e7e7e7;
+            text-align: center;
+            vertical-align: middle;
+            color: #fff;
+        }
+        &.top:before {
+            background: #E74C3C;
+        }
+        &.ask:before {
+            background: #3498DB;
+        }
+        &.good:before {
+            background: #E67E22;
+        }
+        &.job:before {
+            background: #9B59B6;
+        }
+        &.share:before {
+            background: #1ABC9C;
+        }
+      }
+      .list-content__ul--li--intro{
+        padding-top: 10px;
+        display: flex;
+        .list-content__ul--li--intro--img{
+          display: block;
+          width: 40px;
+          height: 40px;
+          border-radius: 50%;
+          margin-right: 10px;
+          border: 1px solid #f3f3f3;
+        }
+        .list-content__ul--li--intro--content{
+          width: 100%;
+          flex: 1;
+          &>div{
+            font-size: 12px;
+            padding: 3px 0;
+            color: #34495e;
+            display: flex;
+            .name{
+              display: block;
+              width: 100%;
+              flex: 1;
+              font-size: 14px;
+              line-height: 14px;
+            }
+            .status{
+              font-size: 14px;
+              line-height: 14px;
+            }
+            b{
+              color: #42b983;
+            }
+            time{
+              font-size: 12px;
+              line-height: 12px;
+            }
+            time:first-child{
+              display: block;
+              width: 100%;
+              flex: 1;
+            }
+          }
+        }
+      }
+    }
+  }
+}

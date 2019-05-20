@@ -1,0 +1,54 @@
+//out: ../css/user-info.min.css, compress: true, sourceMap: false
+.user-info{
+  padding: 15px;
+  font-size: 15px;
+  color: #313131;
+  .logo-no{
+    overflow: hidden;
+    margin: 8px 9px;
+    &>li{
+      float: right;
+      height: 24px;
+      line-height: 24px;
+      padding-left: 34px;
+      position: relative;
+      &:before {
+        width: 24px;
+        height: 24px;
+        content: '';
+        position: absolute;
+        left: 0;
+        top: 0;
+      }
+    }
+    .logo-no__li{
+      float: left;
+      &:before {
+        background: url("../images/components/login_icon.png") no-repeat left center;
+        background-size: 24px 24px;
+      }
+    }
+  }
+  
+  .logo-yes{
+    height: 100%;
+    background: url("../images/components/go_next_icon.png") no-repeat right center;
+    background-size: 6px 10px;
+    overflow: hidden;
+    position: relative;
+    .avatar{
+      width: 40px;
+      height: 40px;
+      background: url("../images/components/user.png") no-repeat center center;
+      background-size: 40px 40px;
+      border-radius: 20px;
+      overflow: hidden;
+      float: left;
+      &>img {
+        width: 40px;
+        height: 40px;
+        display: block;
+      }
+    }
+  }
+}

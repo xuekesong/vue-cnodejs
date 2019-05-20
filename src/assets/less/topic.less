@@ -1,0 +1,151 @@
+//out: ../css/topic.min.css, compress: true, sourceMap: false
+.topic{
+  padding-top: 44px;
+  background-color:#fff;
+  transition: all .3s ease;
+  overflow-x:hidden;
+  .topic-title{
+    padding: 5px;
+    margin:15px;
+    font-size: 18px;
+    color: #2c3e50;
+    line-height: 1.5;
+    background-color:#f0f0f0;
+    border-radius:5px;
+  }
+  .topic-author{
+    display: flex;
+    align-items: center;
+    padding: 0 15px;
+    font-size: 12px;
+    color: #34495e;
+    .topic-author__avatar{
+      width: 40px;
+      height: 40px;
+      border-radius: 50%;
+      margin-right: 15px;
+    }
+    .topic-author__col{
+      display: block;
+      width: 100%;
+      flex: 1;
+    }
+    span, time {
+      display: block;
+      padding: 5px 0;
+    }
+    .topic-author__browse{
+      text-align: right;
+    }
+    .tag {
+      padding: 5px 6px;
+      font-size: 10px;
+      border-radius: 4px;
+      text-align: center;
+      vertical-align: middle;
+      color: #ffffff;
+      &.top {
+          background: #E74C3C;
+      }
+      &.ask {
+          background: #3498DB;
+      }
+      &.good {
+          background: #E67E22;
+      }
+      &.job {
+          background: #9B59B6;
+      }
+      &.share {
+          background: #1ABC9C;
+      }
+  }
+  }
+}
+.topic-content {
+  padding: 15px;
+  margin-top: 15px;
+  background: #ffffff;
+  border-bottom: solid 1px #d4d4d4;
+  .from{
+      color: red;
+  }
+}
+.topic-reply {
+  padding: 15px;
+  border-bottom: solid 1px #d4d4d4;
+  color: #2c3e50;
+  font-size: 16px;
+  line-height: 1.5;
+  strong {
+      color: #42b983;
+  }
+}
+.reply-list{
+  width: 100%;
+  margin-top: 15px;
+  list-style: none;
+  padding-left: 0;
+  li{
+    width: 100%;
+    list-style: none;
+    border-bottom: 1px solid #d4d4d4;
+    .user{
+      width: 100%;
+      margin: 10px 0;
+      padding: 0 10px;
+      display: flex;
+    }
+    .head{
+      display: inline-block;
+      width: 45px;
+      height: 45px;
+      margin-right: 10px;
+      border-radius: 10px;
+    }
+    .info{
+      overflow: hidden;
+      display: block;
+      width: 100%;
+      font-size: 14px;
+      line-height: 14px;
+      flex: 1;
+      .cl{
+        display: inline-block;
+        width: 68%;
+        .name {
+          color: #626262;
+          &.mt10{
+            margin-top: 10px;
+          }
+        }
+      }
+      .cr{
+        width: 30%;
+        display: inline-block;
+        text-align: right;
+        .icon{
+          font-size: 26px;
+          &:hover{
+            cursor: pointer;
+          }
+        }
+      }
+    }
+    .reply_content {
+      padding: 0 15px;
+      margin-bottom: 15px;
+      img {
+          width: auto;
+          height: auto;
+          max-width: 100%;
+          vertical-align: middle;
+          border: 0;
+          -ms-interpolation-mode: bicubic;
+      }
+      p {
+          line-height: 1.3;
+      }
+    }
+  }
+}
